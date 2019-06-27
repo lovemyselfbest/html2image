@@ -3,7 +3,7 @@
 ## 项目共提供三个接口
 
     1，/generate  get方法，从querystring中取得html参数进行转换，图片的长高由html控制
-    2，/generate  post方法，从请求体中取得html参数进行转换，图片的长高由html控制
+    2，/generate?width=500&height=500  post方法，从请求体中取得html参数进行转换，图片的长高由html控制
     3，/load/{guid} 加载图片接口，根据1，2两个接口返回的值进行加载
    
    
