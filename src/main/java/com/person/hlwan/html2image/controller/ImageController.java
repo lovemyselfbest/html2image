@@ -40,7 +40,7 @@ public class ImageController {
 
     @GetMapping("/load/{guid}")
     public void loadImage(@PathVariable String guid, HttpServletResponse response) throws Exception {
-        File file = new File(rootPath + "/" + guid + ".png");
+        File file = new File(rootPath + "/" + guid + ".svg");
         IOUtils.copy(new FileInputStream(file), response.getOutputStream());
         response.getOutputStream().flush();
     }
